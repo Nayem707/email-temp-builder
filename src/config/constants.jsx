@@ -1,5 +1,12 @@
 // Component configurations and constants
-import { ImagePlus } from 'lucide-react';
+import {
+  ImagePlus,
+  Blocks,
+  Minus,
+  ArrowBigUpDash,
+  Type,
+  Heading1,
+} from 'lucide-react';
 
 export const COMPONENT_TYPES = {
   HEADER: 'header',
@@ -13,35 +20,35 @@ export const COMPONENT_CONFIGS = [
   {
     type: COMPONENT_TYPES.HEADER,
     label: 'Header',
-    icon: 'H',
+    icon: <Heading1 />,
     description: 'Add a header section with title and subtitle',
     category: 'content',
   },
   {
     type: COMPONENT_TYPES.TEXT,
     label: 'Text Block',
-    icon: '📝',
+    icon: <Type />,
     description: 'Add text content with formatting options',
     category: 'content',
   },
   {
     type: COMPONENT_TYPES.BUTTON,
     label: 'Button',
-    icon: '🔘',
+    icon: <ArrowBigUpDash />,
     description: 'Add a call-to-action button',
     category: 'interactive',
   },
   {
     type: COMPONENT_TYPES.IMAGE,
     label: 'Image',
-    icon: '🖼️',
+    icon: <ImagePlus />,
     description: 'Add an image with customizable alignment',
     category: 'media',
   },
   {
     type: COMPONENT_TYPES.DIVIDER,
     label: 'Divider',
-    icon: '➖',
+    icon: <Minus />,
     description: 'Add a horizontal line separator',
     category: 'layout',
   },

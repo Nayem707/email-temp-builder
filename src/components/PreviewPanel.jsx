@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import {
-  Camera,
   MailQuestionMark,
   MonitorSmartphone,
   TabletSmartphone,
   Trash2,
 } from 'lucide-react';
+
 import { COMPONENT_CONFIGS } from '../config/constants';
 
 const PreviewPanel = ({
@@ -247,7 +247,7 @@ const PreviewPanel = ({
           <button
             key={component.type}
             onClick={() => onAddComponent(component.type)}
-            className='w-full h-14 flex items-center p-3 text-left bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition-colors group'
+            className='w-14 justify-center h-14 flex items-center p-3 text-left bg-gray-50 hover:bg-gray-100 border border-gray-200 rounded-lg transition-colors group'
           >
             <div className='flex items-center justify-center'>
               <span className=' text-2xl'>{component.icon}</span>
