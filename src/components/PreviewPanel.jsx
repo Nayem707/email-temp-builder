@@ -204,7 +204,7 @@ const PreviewPanel = ({
           >
             {/* Email Header Info */}
             <div className='border-b border-gray-200 p-4 bg-gray-50'>
-              <div className='text-sm text-gray-600'>
+              <div className='text-sm text-gray-600 space-y-2 '>
                 <div>
                   <strong>Subject:</strong> {emailData.subject}
                 </div>

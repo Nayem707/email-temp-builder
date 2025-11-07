@@ -70,7 +70,7 @@ const Header = ({
         <div className='flex items-center justify-between'>
           <div className='flex items-center space-x-4'>
             <div>
-              <h1 className='text-2xl font-bold text-gray-900'>ET Builder</h1>
+              <img src='/ETBuilder.png' alt='ETBuilder' className='w-54' />
             </div>
 
             <div className='flex items-center space-x-2'>
@@ -92,25 +92,25 @@ const Header = ({
           <div className='flex items-center space-x-2'>
             <button
               onClick={() => setShowSampleModal(true)}
-              className='px-2 py-2  border border-gray-300 text-gray-500 rounded-md hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors'
+              className='px-2 py-2  border border-gray-300 text-gray-500 rounded-md hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-500 transition-colors'
             >
               <ArrowUpToLine />
             </button>
             <button
               onClick={handleCopyHTML}
-              className='px-2 py-2 border border-gray-300 text-gray-500 rounded-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors'
+              className='px-2 py-2 border border-gray-300 text-gray-500 rounded-md hover:bg-green-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-green-500 transition-colors'
             >
               <FileCode />
             </button>
             <button
               onClick={() => setShowSaveDialog(true)}
-              className='px-2 py-2  border border-gray-300 text-gray-500 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors'
+              className='px-2 py-2  border border-gray-300 text-gray-500 rounded-md hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors'
             >
               <Save />
             </button>
             <button
               onClick={clearTemplate}
-              className='px-2 py-2  border border-gray-300 text-gray-500 rounded-md hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors'
+              className='px-2 py-2  border border-gray-300 text-gray-500 rounded-md hover:bg-red-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-500 transition-colors'
             >
               <X />
             </button>
@@ -148,7 +148,7 @@ const Header = ({
               </button>
               <button
                 onClick={handleSave}
-                className='px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700'
+                className='px-4 py-2 bg-[#f11b8b] text-white rounded-md hover:bg-[#0f050a] text-sm'
               >
                 Save
               </button>
@@ -178,7 +178,7 @@ const Header = ({
             <div className='flex justify-end space-x-2 mt-4'>
               <button
                 onClick={() => copyToClipboard(generatedHTML)}
-                className='px-4 py-2 bg-blue-600 text-white cursor-pointer rounded-md hover:bg-blue-700'
+                className='px-4 py-2 bg-[#f11b8b] text-white rounded-md hover:bg-[#0f050a] text-sm'
               >
                 Copy to Clipboard
               </button>
@@ -212,7 +212,7 @@ const Header = ({
                     JSON.stringify({ templates: savedTemplates }, null, 2)
                   )
                 }
-                className='px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700'
+                className='px-4 py-2 bg-[#f11b8b] text-white rounded-md hover:bg-[#0f050a] text-sm'
               >
                 Copy JSON
               </button>
@@ -236,7 +236,7 @@ const Header = ({
             </div>
 
             <div className='grid gap-4'>
-              <div className='border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors'>
+              <div className='border border-gray-200 rounded-lg p-4 hover:border-[#f11b8b] cursor-pointer transition-colors'>
                 <h4 className='font-medium text-gray-900 mb-2'>
                   Welcome Newsletter
                 </h4>
@@ -246,13 +246,13 @@ const Header = ({
                 </p>
                 <button
                   onClick={() => loadSampleTemplate(sampleTemplate)}
-                  className='px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm'
+                  className='px-4 py-2 bg-[#f11b8b] text-white rounded-md hover:bg-[#0f050a] text-sm'
                 >
                   Load Template
                 </button>
               </div>
 
-              <div className='border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors'>
+              <div className='border border-gray-200 rounded-lg p-4 hover:border-[#f11b8b] cursor-pointer transition-colors'>
                 <h4 className='font-medium text-gray-900 mb-2'>
                   Monthly Newsletter
                 </h4>
@@ -262,13 +262,13 @@ const Header = ({
                 </p>
                 <button
                   onClick={() => loadSampleTemplate(newsletterTemplate)}
-                  className='px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm'
+                  className='px-4 py-2 bg-[#f11b8b] text-white rounded-md hover:bg-[#0f050a] text-sm'
                 >
                   Load Template
                 </button>
               </div>
 
-              <div className='border border-gray-200 rounded-lg p-4 hover:border-blue-300 transition-colors'>
+              <div className='border border-gray-200 rounded-lg p-4 hover:border-[#f11b8b] cursor-pointer transition-colors'>
                 <h4 className='font-medium text-gray-900 mb-2'>
                   Promotional Offer
                 </h4>
@@ -278,7 +278,7 @@ const Header = ({
                 </p>
                 <button
                   onClick={() => loadSampleTemplate(promotionalTemplate)}
-                  className='px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 text-sm'
+                  className='px-4 py-2 bg-[#f11b8b] text-white rounded-md hover:bg-[#0f050a] text-sm'
                 >
                   Load Template
                 </button>
